@@ -1,0 +1,10 @@
+/* ---------------------------------------------------------
+                           Font-face
+   ---------------------------------------------------------*/
+@include font-face("Raleway", "../fonts/RalewayRegular/RalewayRegular");
+@include font-face("Raleway", "../fonts/RalewayBold/RalewayBold", bold);
+@include font-face("Raleway", "../fonts/RalewayExtraBold/RalewayExtraBold", 800);
+@include font-face("Raleway", "../fonts/RalewayLight/RalewayLight", 300);
+@include font-face("Raleway", "../fonts/RalewaySemiBold/RalewaySemiBold", 600);
+@include font-face("Raleway", "../fonts/RalewayThin/RalewayThin", 100);
+@include font-face("FiraSans", "../fonts/FiraSansRegular/FiraSansRegular");

@@ -1,0 +1,155 @@
+/* ---------------------------------------------------------
+                            Сommon
+   ---------------------------------------------------------*/
+// preloader
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background: $dark;
+
+  .pulse {
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    margin-left: -40px;
+    margin-top: -40px;
+
+    &::before, &::after {
+      content: '';
+      border: 5px solid #323232;
+      width: 80px;
+      height: 80px;
+      border-radius: 500px;
+      position: absolute;
+    }
+
+    &::before {
+      animation: pulse-outer .8s ease-in infinite;
+    }
+
+    &::after {
+      animation: pulse-inner .8s linear infinite;
+    }
+  }
+}
+
+@keyframes pulse-outer {
+  0% {
+    @include opacity(100);
+  }
+  50% {
+    @include opacity(50);
+  }
+  100% {
+    @include opacity(0);
+  }
+}
+
+@keyframes pulse-inner {
+  0% {
+    @include opacity(0);
+    transform: scale(0);
+  }
+  100% {
+    @include opacity(100);
+    transform: scale(1);
+  }
+}
+
+// button to top
+
+.top {
+  position: fixed;
+  bottom: 25px;
+  right: -100px;
+  width: 50px;
+  height: 50px;
+  z-index: 12;
+  cursor: pointer;
+  font-size: 26px;
+  line-height: 50px;
+  text-align: center;
+  background: #e0e0e0;
+  color: #666;
+  border-radius: 50%;
+  opacity: .5;
+  @extend %transition;
+  
+  &:hover {
+    background: $accent;
+    opacity: 1;
+  }
+
+  &.active {
+    right: 25px;
+  }
+}
+
+
+header, section, footer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section {
+  background-color: $white;
+}
+
+.inverse {
+  background-color: $dark;
+  color: $white;
+}
+
+.h2 {
+  font-size: $h2-font-size;
+  font-weight: 800;
+  color: $accent;
+  position: relative;
+  span {
+    color: $white;
+  }
+}
+
+.section-inverse {
+  background: $dark;
+  color: $white;
+}
+
+.section-overlay {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($over, .92);
+  }
+}
+
+.ishome,
+.isnohome {
+  input,
+  textarea,
+  select,
+  .selectize-control.single .selectize-input,
+  .selectize-control.single .selectize-input.input-active{
+    padding: 8px 22px;
+    display: inline-block;
+    border: 1px solid rgba($black, .1);
+    border-bottom: 2px solid rgba($black, .1);
+    border-radius: 2px;
+    outline: none;
+    background-color: transparent;
+    color: $white;
+  }
+  select {
+    height: 47px;
+  }
+}

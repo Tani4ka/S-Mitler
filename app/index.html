@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>S-Mitler</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Как будет стилизоваться браузер на мобильный устройствах, там где строка поиска-->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#1a1a1a">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#1a1a1a">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
+
+	<!-- opacity: 0; - если подклучаем link в конце, чтобы не было видно загрузку сайта без css.-->
+	<!-- background-color: $dark; - чтобы при перезагрузке не мелькал белый экран и позволяет делать preloader.-->
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #1a1a1a; }</style>
+
+</head>
+
+<body class="ishome">
+
+	<div class="preloader"><div class="pulse"></div></div>
+
+	<div id="my-page">
+
+		<div id="my-header">
+			<header class="header" style="background-image: url('img/fon.jpg')">
+
+				<div class="top-line">
+					<a href="#" class="logo"><img src="img/logo.svg" alt="Салон красоты Смитлер"></a>
+					<div class="phone"><i class="fa fa-mobile"></i> +7 (495) 118-94-35 </div>
+					<a href="#my-menu" class="hamburger hamburger--emphatic">
+						<span class="hamburger-box">
+    						<span class="hamburger-inner"></span>
+  						</span>
+					</a>
+				</div>
+
+				<nav id="my-menu">
+					<ul>
+						<li><a href="#">Парикмахерский сервис</a></li>
+						<li><a href="#">Косметологический сервис</a></li>
+						<li><a href="#">Маникюрный сервис</a></li>
+						<li><a href="#">Массаж и SPA</a></li>
+						<li><a href="#">Солярий</a></li>
+						<li><a href="#">Наши специалисты</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#">Наши сертификаты</a></li>
+						<li><a href="#">О салоне</a></li>
+					</ul>
+				</nav>
+
+				<div class="wrap-flex">
+					<div class="flex-center">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-6 col-xs-10">
+
+									<div class="composition">
+										<div class="composition__welcome">
+											<p class="composition__text"><span>Добро пожаловать в профессиональный</span></p>
+											<h1 class="h1 composition__head">Салон красоты</h1>
+											<strong class="composition__location"><i class="fa fa-star"></i>В Москве<i class="fa fa-star"></i></strong>
+										</div>
+										<p class="composition__description"><strong>S&Mitler</strong> - это салон красоты бизнес-класса. Мастера салона дарят посетителям
+											уверенность в себе и индивидуальный стиль. Здесь представлены все самые
+											востребованые услуги бьюти-индустрии.
+										</p>
+										<button class="button">О салоне</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header-social">
+					<nav class="social">
+						<ul class="social__list">
+							<li class="social__li"><a href="#" class="social__link"><i class="fa fa-facebook"></i></a></li>
+							<li class="social__li"><a href="#" class="social__link"><i class="fa fa-instagram"></i></a></li>
+							<li class="social__li"><a href="#" class="social__link"><i class="fa fa-vk"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="contacts">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-6"><i class="fa fa-location-arrow"></i> г. Москва, ул. Ивана Бабушкина, 22с1 </div>
+							<div class="col-md-4 col-sm-6 contacts__phone"><i class="fa fa-mobile"></i> + 7 (495) 922-77-73 </div>
+							<div class="col-md-4 hidden-sm hidden-xs"><i class="fa fa-clock-o"></i> Время работы: ежедневно, 10:00-22:00 </div>
+						</div>
+					</div>
+				</div>
+
+			</header>
+		</div>
+
+		<div id="my-content">
+			<section class="s-services">
+				<div class="owl-carousel carousel-services">
+					<div class="carousel-services__item">
+						<div class="carousel-services__composition">
+							<div class="carousel-services__content">
+								<div><img src="img/logo-black.svg" class="carousel-services__logo-img" alt="Салон красоты Смитлер"></div>
+								<h3 class="carousel-services__header">Косметологический сервис</h3>
+								<ul class="carousel-services__list">
+									<li>Ключевая услуга #1 - <strong>8500 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #2 - <strong>7600 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #3 - <strong>3200 <i class="fa fa-rub"></i></strong></li>
+								</ul>
+								<a href="#" class="button button_white">Список услуг</a>
+							</div>
+						</div>
+						<div class="carousel-services__image" style="background-image: url('img/services-1.png')"></div>
+					</div>
+
+					<div class="carousel-services__item">
+						<div class="carousel-services__composition">
+							<div class="carousel-services__content">
+								<div><img src="img/logo-black.svg" class="carousel-services__logo-img" alt="Салон красоты Смитлер"></div>
+								<h3 class="carousel-services__header">Парикмахерский сервис</h3>
+								<ul class="carousel-services__list">
+									<li>Ключевая услуга #1 - <strong>8500 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #2 - <strong>3600 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #3 - <strong>9800 <i class="fa fa-rub"></i></strong></li>
+								</ul>
+								<a href="#" class="button button_white">Список услуг</a>
+							</div>
+						</div>
+						<div class="carousel-services__image" style="background-image: url('img/services-2.jpg')"></div>
+					</div>
+
+					<div class="carousel-services__item">
+						<div class="carousel-services__composition">
+							<div class="carousel-services__content">
+								<div><img src="img/logo-black.svg" class="carousel-services__logo-img" alt="Салон красоты Смитлер"></div>
+								<h3 class="carousel-services__header">Маникюрный сервис</h3>
+								<ul class="carousel-services__list">
+									<li>Ключевая услуга #1 - <strong>8500 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #2 - <strong>3400 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #3 - <strong>7500 <i class="fa fa-rub"></i></strong></li>
+								</ul>
+								<a href="#" class="button button_white">Список услуг</a>
+							</div>
+						</div>
+						<div class="carousel-services__image" style="background-image: url('img/services-3.jpg')"></div>
+					</div>
+
+					<div class="carousel-services__item">
+						<div class="carousel-services__composition">
+							<div class="carousel-services__content">
+								<div><img src="img/logo-black.svg" class="carousel-services__logo-img" alt="Салон красоты Смитлер"></div>
+								<h3 class="carousel-services__header">Парикмахерский сервис</h3>
+								<ul class="carousel-services__list">
+									<li>Ключевая услуга #1 - <strong>8500 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #2 - <strong>8500 <i class="fa fa-rub"></i></strong></li>
+									<li>Ключевая услуга #3 - <strong>8500 <i class="fa fa-rub"></i></strong></li>
+								</ul>
+								<a href="#" class="button button_white">Список услуг</a>
+							</div>
+						</div>
+						<div class="carousel-services__image" style="background-image: url('img/services-2.jpg')"></div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="s-king inverse section-overlay" style="background-image: url('img/photos/small/salon-1.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="h2">Королевский салон</div>
+							<p class="s-king__text"><strong>S&Mitler</strong> встречает своих посетителей современным дизайном и
+								атмосферой уюта: огромное светлое пространство, изящная мебель, мягкие бархотные кресла.
+								Это отличное место для того, чтобы посвятить пару часов только себе!
+							</p>
+							<p class="s-king__text">Дамам здесь предложат экстраординарный ассортимент косметологических процедур и
+								качественный нейл-сервис, а мужчин порадуют услугами стилистов и уходом за лицом.
+							</p>
+						</div>
+
+						<div class="col-md-7">
+							<div class="fotorama" data-nav="thumbs" data-thumbwidth="110.5" data-thumbheight="66" data-thumbmargin="10"  data-width="100%">
+								<a href="img/photos/small/salon-1.jpg"><img src="img/photos/thumbs/salon-1.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-2.jpg"><img src="img/photos/thumbs/salon-2.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-3.jpg"><img src="img/photos/thumbs/salon-3.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-4.jpg"><img src="img/photos/thumbs/salon-4.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-5.jpg"><img src="img/photos/thumbs/salon-5.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-1.jpg"><img src="img/photos/thumbs/salon-1.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-2.jpg"><img src="img/photos/thumbs/salon-2.jpg" alt="Фото салона красоты"></a>
+								<a href="img/photos/small/salon-3.jpg"><img src="img/photos/thumbs/salon-3.jpg" alt="Фото салона красоты"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="s-call inverse section-overlay section-overlay_yellow" style="background-image: url('img/women-1.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6">
+
+							<form class="callback">
+								<div class="callback__success">Спасибо за заявку</div>
+
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="SMITLER">
+								<input type="hidden" name="admin_email" value="tatyana.granchenko@gmail.com">
+								<input type="hidden" name="form_subject" value="Заявка с сайта SMITLER">
+								<!-- END Hidden Required Fields -->
+
+								<input type="hidden" name="Страница" value="">
+
+								<div><img src="img/logo-black.svg" class="callback__logo-img" alt="Салон красоты Смитлер"></div>
+								<h2 class="h2 callback__header">Оставить заявку</h2>
+								<p class="callback__text">Оставьте заявку и мы вам перезвоним</p>
+
+								<input type="text" placeholder="Ваше имя"/>
+								<input type="text" placeholder="Ваш телефон"/>
+								<select name="Services">
+									<option value disabled selected>Выбрать услугу</option>
+									<option>Парикмахерский сервис</option>
+									<option>Косметологический сервис</option>
+									<option>Маникюрный сервис</option>
+									<option>Массаж и SPA</option>
+									<option>Солярий</option>
+								</select>
+								<button class="button button_white">Отправить</button>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="s-review inverse section-overlay" style="background-image: url('img/women-2.jpg')">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-sm-12">
+							<h2 class="h2">Отзывы наших клиентов</h2>
+						</div>
+
+						<div class="col-sm-8 col-sm-offset-2">
+							<!--<div class="row">-->
+							<div class="s-review__carousel-quotes"></div>
+
+							<div class="owl-carousel s-review__carousel">
+
+								<div class="review">
+									<div class="review__header">Оксана</div>
+									<div class="review__date">29.07.16 (Стрижка)</div>
+									<div class="review__stars">
+										<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+									</div>
+									<div class="review__text">Мне очень повезло! Я случайно попала в салон красоты S&Mitler, когда возвращалась с работы. Времени, записываться на стрижку, у меня не было. И, на удачу, я попала в смену стилиста Марины. Я сама не знала, как я хочу постричься, но Марина предлагала несколько вариантов. И в итоге я получилв колссальное удовольствие от конечного итога! Марина с моими волосами сделала что-то невероятно красивое! После стрижки волосы стали более обьемными и гладкими! Спасибо Мариночке за индивидуальный подход и качество выполненной работы!!!</div>
+								</div>
+
+								<div class="review">
+									<div class="review__header">Максим</div>
+									<div class="review__date">28.06.16 (Стрижка)</div>
+									<div class="review__stars">
+										<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+									</div>
+									<div class="review__text">Мне очень повезло! Я случайно попала в салон красоты S&Mitler, когда возвращалась с работы. Времени, записываться на стрижку, у меня не было. И, на удачу, я попала в смену стилиста Марины. Я сама не знала, как я хочу постричься, но Марина предлагала несколько вариантов. И в итоге я получилв колссальное удовольствие от конечного итога! </div>
+								</div>
+
+								<div class="review">
+									<div class="review__header">Лена</div>
+									<div class="review__date">05.09.16 (Маникюр)</div>
+									<div class="review__stars">
+										<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+									</div>
+									<div class="review__text">Мне очень повезло! Я случайно попала в салон красоты S&Mitler, когда возвращалась с работы. Времени, записываться на стрижку, у меня не было. И, на удачу, я попала в смену стилиста Марины. Я сама не знала, как я хочу постричься, но Марина предлагала несколько вариантов.</div>
+								</div>
+
+							</div>
+							<!--</div>-->
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="s-partners inverse section-overlay section-overlay_white" style="background-image: url('img/women-3.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col sm-12">
+							<h2 class="h2 s-partners_header">Наши партнеры</h2>
+
+							<div class="col-sm-10 col-sm-offset-1">
+								<div class="owl-carousel carousel-partners">
+									<div class="carousel-partners__item">
+										<img class="carousel-partners__img" src="img/brand-1.png" alt="Партнеры">
+									</div>
+
+									<div class="carousel-partners__item">
+										<img class="carousel-partners__img" src="img/brand-2.png" alt="Партнеры">
+									</div>
+
+									<div class="carousel-partners__item">
+										<img class="carousel-partners__img" src="img/brand-3.png" alt="Партнеры">
+									</div>
+
+									<div class="carousel-partners__item">
+										<img class="carousel-partners__img" src="img/brand-4.png" alt="Партнеры">
+									</div>
+
+									<div class="carousel-partners__item">
+										<img class="carousel-partners__img" src="img/brand-1.png" alt="Партнеры">
+									</div>
+
+									<div class="carousel-partners__item">
+										<img class="carousel-partners__img" src="img/brand-2.png" alt="Партнеры">
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div id="my-footer">
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-2 col-sm-4 col-xs-12">
+							<div class="footer-info footer-column">
+								<img src="img/logo.svg" class="footer-info__logo">
+								<p class="footer-info__text">Салон красоты <br/> бизнес класса в Москве</p>
+
+								<div class="footer-info__social">
+									<nav class="social">
+										<ul class="social__list">
+											<li class="social__li"><a href="#" class="social__link"><i class="fa fa-facebook"></i></a></li>
+											<li class="social__li"><a href="#" class="social__link"><i class="fa fa-instagram"></i></a></li>
+											<li class="social__li"><a href="#" class="social__link"><i class="fa fa-vk"></i></a></li>
+										</ul>
+									</nav>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-4 col-xs-12">
+							<div class="footer-menu footer-column">
+								<nav>
+									<ul class="footer-menu__list">
+										<li class="footer-menu__li footer-menu__li_active"><a href="#" class="footer-menu__link">Парикмахерский сервис</a></li>
+										<li class="footer-menu__li"><a href="#" class="footer-menu__link">Косметологический сервис</a></li>
+										<li class="footer-menu__li"><a href="#" class="footer-menu__link">Маникюрный сервис</a></li>
+										<li class="footer-menu__li"><a href="#" class="footer-menu__link">Массаж и SPA</a></li>
+										<li class="footer-menu__li"><a href="#" class="footer-menu__link">Солярий</a></li>
+										<li class="footer-menu__li"><a href="#" class="footer-menu__link">Наши специалисты</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-4 col-xs-12">
+							<div class="footer-contacts footer-column">
+								<p class="footer-contacts__addr"><i class="fa fa-location-arrow"></i> г. Москва, ул. Ивана Бабушкина, 22с1 / м. Профсоюзная</p>
+								<p class="footer-contacts__addr"><i class="fa fa-clock-o"></i> Время работы: ежедневно, <br>10:00 - 22:00</p>
+								<p class="footer-contacts__addr"><span class="footer-contacts__addr_bold"><i class="fa fa-mobile"></i> +7 (495) 922-77-72</span></p>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-12 col-xs-12">
+							<div class="footer-map footer-column">
+								<div class="map">
+									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4059dac3eb5395b623597d7d76610663f9ba898b8fcf17bc08ec696ab98df5c9&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
